@@ -139,9 +139,8 @@ p {
 }
 
 .profile-info img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: all 0.2s ease-in-out;
-  filter: drop-shadow(0 0 0.65rem var(--Dark-cyan));
 }
 
 .profile-stats {
@@ -156,7 +155,41 @@ p {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 10px;
+  color: var(--Very-dark-desaturated-blue);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #fff;
+}
+
+/* for large devices media queries*/
+@media screen and (min-width: 600px) {
+  /* body {
+    flex-direction: column;
+  } */
+  .container {
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--Dark-cyan);
+    background-image: url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+    background-position: -59% 260%, 143% -222%;
+    background-repeat: no-repeat;
+  }
+  .card {
+    width: 100%;
+    max-width: 350px;
+    height: 375px;
+  }
+}
+
+/* mobile device */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: var(--Dark-gray);
+  }
+  .container {
+    flex-direction: column;
+  }
 }
