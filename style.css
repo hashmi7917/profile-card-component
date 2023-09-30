@@ -167,7 +167,7 @@ p {
     background-color: var(--Dark-cyan);
     background-image: url(./images/bg-pattern-top.svg),
       url(./images/bg-pattern-bottom.svg);
-    background-position: -59% 260%, 143% -222%;
+    background-position: -40% 252%, 135% -156%;
     background-repeat: no-repeat;
   }
   .card {
